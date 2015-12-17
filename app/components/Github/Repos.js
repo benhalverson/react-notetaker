@@ -3,8 +3,11 @@ var React = require('react');
 var Repos = React.createClass({
   render: function() {
     return (
-      <div> Repos</div>
-    )
+      <div>
+      <p>Repos</p>
+      <p>{this.props.repos}</p>
+      </div>
+  )
   }
 });
 
