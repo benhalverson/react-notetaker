@@ -55,7 +55,7 @@
 	  Router,
 	  null,
 	  routes
-	), document.getElementById('App'));
+	), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -24324,8 +24324,8 @@
 	        { className: "navbar navbar-default", role: "navigation" },
 	        React.createElement(
 	          "div",
-	          { className: "col-sm-7 col-sm-offset-2", style: marginTop },
-	          "Menu"
+	          { className: "col-sm-7 col-sm-offset-2", style: { marginTop: 15 } },
+	          "MENU"
 	        )
 	      ),
 	      React.createElement(
@@ -24358,6 +24358,8 @@
 	    );
 	  }
 	});
+
+	module.exports = Home;
 
 /***/ }
 /******/ ]);
