@@ -1,17 +1,17 @@
 var React = require('react');
 var Router = require('react-router');
-var Repos = require('./Github/repos');
+var Repos = require('./Github/Repos');
 var UserProfile = require('./Github/UserProfile');
 var Notes = require('./Notes/Notes');
 
 var Profile = React.createClass({
   getInitialState: function() {
     return {
-      notes: [],
+      notes: ['1','2', '3'],
       bio: {
         name: 'Ben Halverson'
       },
-      repos: [],
+      repos: ['a', 'b', 'c'],
     }
   },
   render: function() {

@@ -24380,11 +24380,11 @@
 
 	  getInitialState: function getInitialState() {
 	    return {
-	      notes: [],
+	      notes: ['1', '2', '3'],
 	      bio: {
 	        name: 'Ben Halverson'
 	      },
-	      repos: []
+	      repos: ['a', 'b', 'c']
 	    };
 	  },
 	  render: function render() {
@@ -24428,7 +24428,16 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      ' Repos'
+	      React.createElement(
+	        'p',
+	        null,
+	        'Repos'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        this.props.repos
+	      )
 	    );
 	  }
 	});
@@ -24488,7 +24497,16 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      ' Notes'
+	      React.createElement(
+	        'p',
+	        null,
+	        'Notes'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        this.props.notes
+	      )
 	    );
 	  }
 	});
