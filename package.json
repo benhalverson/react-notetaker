@@ -9,7 +9,7 @@
   "author": "Ben Halverson <benhalverson33@gmail.com> (http://benhalverson.me/)",
   "license": "MIT",
   "dependencies": {
-    "firebase": "2.3.2",
+    "firebase": "10.9.0",
     "history": "1.13.1",
     "react": "0.14.3",
     "react-dom": "0.14.3",
